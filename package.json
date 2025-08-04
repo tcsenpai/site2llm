@@ -1,0 +1,33 @@
+{
+  "name": "site2llm",
+  "version": "1.0.0",
+  "description": "CLI tool to generate llms.txt files from websites",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target bun --minify",
+    "start": "bun dist/index.js",
+    "prepublish": "bun run build"
+  },
+  "bin": {
+    "site2llm": "dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "package.json"
+  ],
+  "keywords": ["llms", "txt", "generator", "cli", "scraper"],
+  "author": "User",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "latest",
+    "bun-types": "latest"
+  },
+  "dependencies": {
+    "chalk": "^5.5.0",
+    "cli-progress": "^3.12.0",
+    "commander": "latest",
+    "ora": "^8.2.0"
+  }
+}
