@@ -33,7 +33,7 @@ site2llm validate https://example.com
 #### Option 2: Run from Source
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone github.com/tcsenpai/site2llm
 cd site2llm
 
 # Install dependencies
